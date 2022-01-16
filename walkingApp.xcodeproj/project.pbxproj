@@ -15,8 +15,18 @@
 		4D3B1A7227915E39004CEB48 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D3B1A7127915E39004CEB48 /* GoogleService-Info.plist */; };
 		4D3B1A74279163BA004CEB48 /* myViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3B1A73279163BA004CEB48 /* myViewController.swift */; };
 		4D894843278ED29E00677483 /* Pods_walkingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28CF3538A4D6C7E626F2B1C4 /* Pods_walkingApp.framework */; };
-		569CE5772794026100164226 /* LoginVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 569CE5762794026100164226 /* LoginVC.storyboard */; };
+		569CE5772794026100164226 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 569CE5762794026100164226 /* Login.storyboard */; };
 		569CE5792794026E00164226 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569CE5782794026E00164226 /* LoginVC.swift */; };
+		56CE5848279428E700584A4F /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CE5847279428E700584A4F /* HomeVC.swift */; };
+		56CE584A2794291A00584A4F /* MyInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CE58492794291A00584A4F /* MyInfoVC.swift */; };
+		56CE584C27942A9800584A4F /* BottomTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56CE584B27942A9800584A4F /* BottomTabBar.storyboard */; };
+		56CE584E27942AB400584A4F /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56CE584D27942AB400584A4F /* Home.storyboard */; };
+		56CE58572794305C00584A4F /* NotoSansKR-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 56CE58512794305500584A4F /* NotoSansKR-Bold.otf */; };
+		56CE58582794305C00584A4F /* NotoSansKR-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 56CE58522794305700584A4F /* NotoSansKR-Regular.otf */; };
+		56CE58592794305C00584A4F /* NotoSansKR-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 56CE58532794305800584A4F /* NotoSansKR-Thin.otf */; };
+		56CE585A2794305C00584A4F /* NotoSansKR-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 56CE58542794305900584A4F /* NotoSansKR-Black.otf */; };
+		56CE585B2794305C00584A4F /* NotoSansKR-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 56CE58552794305A00584A4F /* NotoSansKR-Light.otf */; };
+		56CE585C2794305C00584A4F /* NotoSansKR-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 56CE58562794305C00584A4F /* NotoSansKR-Medium.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +40,18 @@
 		4D13E430278C3E7800956BB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D3B1A7127915E39004CEB48 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4D3B1A73279163BA004CEB48 /* myViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myViewController.swift; sourceTree = "<group>"; };
-		569CE5762794026100164226 /* LoginVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginVC.storyboard; sourceTree = "<group>"; };
+		569CE5762794026100164226 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		569CE5782794026E00164226 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		56CE5847279428E700584A4F /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		56CE58492794291A00584A4F /* MyInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInfoVC.swift; sourceTree = "<group>"; };
+		56CE584B27942A9800584A4F /* BottomTabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BottomTabBar.storyboard; sourceTree = "<group>"; };
+		56CE584D27942AB400584A4F /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		56CE58512794305500584A4F /* NotoSansKR-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Bold.otf"; sourceTree = "<group>"; };
+		56CE58522794305700584A4F /* NotoSansKR-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Regular.otf"; sourceTree = "<group>"; };
+		56CE58532794305800584A4F /* NotoSansKR-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Thin.otf"; sourceTree = "<group>"; };
+		56CE58542794305900584A4F /* NotoSansKR-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Black.otf"; sourceTree = "<group>"; };
+		56CE58552794305A00584A4F /* NotoSansKR-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Light.otf"; sourceTree = "<group>"; };
+		56CE58562794305C00584A4F /* NotoSansKR-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Medium.otf"; sourceTree = "<group>"; };
 		7B54E0978D76CD658F0E7E2F /* Pods-walkingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-walkingApp.debug.xcconfig"; path = "Target Support Files/Pods-walkingApp/Pods-walkingApp.debug.xcconfig"; sourceTree = "<group>"; };
 		988A15EB3A4EC6F0C9428F0F /* Pods-walkingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-walkingApp.release.xcconfig"; path = "Target Support Files/Pods-walkingApp/Pods-walkingApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,8 +98,8 @@
 		4D13E421278C3E7600956BB2 /* walkingApp */ = {
 			isa = PBXGroup;
 			children = (
+				56CE584F2794301200584A4F /* Resources */,
 				4D13E422278C3E7600956BB2 /* AppDelegate.swift */,
-				4D13E426278C3E7600956BB2 /* ViewController.swift */,
 				569CE571279401BF00164226 /* Model */,
 				569CE56F279401B200164226 /* Controller */,
 				569CE56E279401A000164226 /* View */,
@@ -95,11 +115,11 @@
 		569CE56E279401A000164226 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				56CE584B27942A9800584A4F /* BottomTabBar.storyboard */,
 				569CE5742794023A00164226 /* Login */,
 				56CE58412794272900584A4F /* Home */,
 				56CE58432794275200584A4F /* Map */,
 				56CE58422794274200584A4F /* MyInfo */,
-				4D13E428278C3E7600956BB2 /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -107,10 +127,10 @@
 		569CE56F279401B200164226 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				56CE58462794279C00584A4F /* MyInfo */,
-				56CE58452794278600584A4F /* Map */,
-				56CE58442794278300584A4F /* Home */,
 				569CE5752794024000164226 /* Login */,
+				56CE58442794278300584A4F /* Home */,
+				56CE58452794278600584A4F /* Map */,
+				56CE58462794279C00584A4F /* MyInfo */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -118,8 +138,8 @@
 		569CE571279401BF00164226 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				569CE573279401C700164226 /* Extension */,
 				569CE572279401C300164226 /* Network */,
+				569CE573279401C700164226 /* Extension */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -141,7 +161,7 @@
 		569CE5742794023A00164226 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				569CE5762794026100164226 /* LoginVC.storyboard */,
+				569CE5762794026100164226 /* Login.storyboard */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -157,6 +177,7 @@
 		56CE58412794272900584A4F /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				56CE584D27942AB400584A4F /* Home.storyboard */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -171,6 +192,7 @@
 		56CE58432794275200584A4F /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				4D13E428278C3E7600956BB2 /* Main.storyboard */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -178,6 +200,7 @@
 		56CE58442794278300584A4F /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				56CE5847279428E700584A4F /* HomeVC.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -185,6 +208,7 @@
 		56CE58452794278600584A4F /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				4D13E426278C3E7600956BB2 /* ViewController.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -192,8 +216,30 @@
 		56CE58462794279C00584A4F /* MyInfo */ = {
 			isa = PBXGroup;
 			children = (
+				56CE58492794291A00584A4F /* MyInfoVC.swift */,
 			);
 			path = MyInfo;
+			sourceTree = "<group>";
+		};
+		56CE584F2794301200584A4F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				56CE58502794302C00584A4F /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		56CE58502794302C00584A4F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				56CE58542794305900584A4F /* NotoSansKR-Black.otf */,
+				56CE58512794305500584A4F /* NotoSansKR-Bold.otf */,
+				56CE58552794305A00584A4F /* NotoSansKR-Light.otf */,
+				56CE58562794305C00584A4F /* NotoSansKR-Medium.otf */,
+				56CE58522794305700584A4F /* NotoSansKR-Regular.otf */,
+				56CE58532794305800584A4F /* NotoSansKR-Thin.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		580818258E3CB4A79E7EF35C /* Frameworks */ = {
@@ -264,10 +310,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56CE584E27942AB400584A4F /* Home.storyboard in Resources */,
+				56CE585A2794305C00584A4F /* NotoSansKR-Black.otf in Resources */,
+				56CE585C2794305C00584A4F /* NotoSansKR-Medium.otf in Resources */,
+				56CE58582794305C00584A4F /* NotoSansKR-Regular.otf in Resources */,
 				4D13E42F278C3E7800956BB2 /* LaunchScreen.storyboard in Resources */,
+				56CE58572794305C00584A4F /* NotoSansKR-Bold.otf in Resources */,
+				56CE58592794305C00584A4F /* NotoSansKR-Thin.otf in Resources */,
+				56CE585B2794305C00584A4F /* NotoSansKR-Light.otf in Resources */,
+				56CE584C27942A9800584A4F /* BottomTabBar.storyboard in Resources */,
 				4D3B1A7227915E39004CEB48 /* GoogleService-Info.plist in Resources */,
 				4D13E42C278C3E7800956BB2 /* Assets.xcassets in Resources */,
-				569CE5772794026100164226 /* LoginVC.storyboard in Resources */,
+				569CE5772794026100164226 /* Login.storyboard in Resources */,
 				4D13E42A278C3E7600956BB2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,7 +375,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56CE584A2794291A00584A4F /* MyInfoVC.swift in Sources */,
 				4D13E427278C3E7600956BB2 /* ViewController.swift in Sources */,
+				56CE5848279428E700584A4F /* HomeVC.swift in Sources */,
 				4D3B1A74279163BA004CEB48 /* myViewController.swift in Sources */,
 				569CE5792794026E00164226 /* LoginVC.swift in Sources */,
 				4D13E423278C3E7600956BB2 /* AppDelegate.swift in Sources */,

@@ -2,6 +2,15 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>NotoSansKR-Thin</string>
+		<string>NotoSansKR-Regular</string>
+		<string>NotoSansKR-Medium</string>
+		<string>NotoSansKR-Light</string>
+		<string>NotoSansKR-Bold</string>
+		<string>NotoSansKR-Black</string>
+	</array>
 	<key>NMFClientId</key>
 	<string>tezb024dzx</string>
 </dict>
