@@ -16,8 +16,17 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashLogo" translatesAutoresizingMaskIntoConstraints="NO" id="7u5-2v-Aom">
+                                <rect key="frame" x="68.5" y="364" width="277.5" height="55"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7u5-2v-Aom" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="320" id="qwo-An-Yg0"/>
+                            <constraint firstItem="7u5-2v-Aom" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="zah-Ir-aF0"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -26,6 +35,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="splashLogo" width="277.5" height="55"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
