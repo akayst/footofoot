@@ -96,6 +96,9 @@
 			isa = PBXGroup;
 			children = (
 				569CE5742794023A00164226 /* Login */,
+				56CE58412794272900584A4F /* Home */,
+				56CE58432794275200584A4F /* Map */,
+				56CE58422794274200584A4F /* MyInfo */,
 				4D13E428278C3E7600956BB2 /* Main.storyboard */,
 			);
 			path = View;
@@ -104,6 +107,9 @@
 		569CE56F279401B200164226 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				56CE58462794279C00584A4F /* MyInfo */,
+				56CE58452794278600584A4F /* Map */,
+				56CE58442794278300584A4F /* Home */,
 				569CE5752794024000164226 /* Login */,
 			);
 			path = Controller;
@@ -146,6 +152,48 @@
 				569CE5782794026E00164226 /* LoginVC.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		56CE58412794272900584A4F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		56CE58422794274200584A4F /* MyInfo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MyInfo;
+			sourceTree = "<group>";
+		};
+		56CE58432794275200584A4F /* Map */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		56CE58442794278300584A4F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		56CE58452794278600584A4F /* Map */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		56CE58462794279C00584A4F /* MyInfo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MyInfo;
 			sourceTree = "<group>";
 		};
 		580818258E3CB4A79E7EF35C /* Frameworks */ = {
@@ -354,7 +402,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -411,7 +459,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -437,7 +485,10 @@
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = walkingApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = footofoot;
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "사용중에만 위치정보를 사용합니다.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "사용자의 위치를 받습니다";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "ㅎㅎ";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -475,7 +526,10 @@
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = walkingApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = footofoot;
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "사용중에만 위치정보를 사용합니다.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "사용자의 위치를 받습니다";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "ㅎㅎ";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
