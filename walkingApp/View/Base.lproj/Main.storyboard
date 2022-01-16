@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qmh-Xs-b3X" customClass="NMFMapView">
-                                <rect key="frame" x="0.0" y="0.0" width="820" height="1134"/>
+                                <rect key="frame" x="0.0" y="0.0" width="820" height="1160"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="mKI-8A-3j3"/>
@@ -31,7 +31,7 @@
                         <constraints>
                             <constraint firstItem="Qmh-Xs-b3X" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="0Hg-Ow-K4B"/>
                             <constraint firstItem="Qmh-Xs-b3X" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="JkJ-Qx-Is4"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Qmh-Xs-b3X" secondAttribute="bottom" constant="26" id="PNU-Ij-Uz8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Qmh-Xs-b3X" secondAttribute="bottom" id="PNU-Ij-Uz8"/>
                             <constraint firstItem="Qmh-Xs-b3X" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dY9-pt-x73"/>
                         </constraints>
                     </view>

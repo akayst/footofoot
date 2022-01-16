@@ -15,6 +15,8 @@
 		4D3B1A7227915E39004CEB48 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D3B1A7127915E39004CEB48 /* GoogleService-Info.plist */; };
 		4D3B1A74279163BA004CEB48 /* myViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3B1A73279163BA004CEB48 /* myViewController.swift */; };
 		4D894843278ED29E00677483 /* Pods_walkingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28CF3538A4D6C7E626F2B1C4 /* Pods_walkingApp.framework */; };
+		569CE5772794026100164226 /* LoginVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 569CE5762794026100164226 /* LoginVC.storyboard */; };
+		569CE5792794026E00164226 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569CE5782794026E00164226 /* LoginVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		4D13E430278C3E7800956BB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D3B1A7127915E39004CEB48 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4D3B1A73279163BA004CEB48 /* myViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myViewController.swift; sourceTree = "<group>"; };
+		569CE5762794026100164226 /* LoginVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginVC.storyboard; sourceTree = "<group>"; };
+		569CE5782794026E00164226 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		7B54E0978D76CD658F0E7E2F /* Pods-walkingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-walkingApp.debug.xcconfig"; path = "Target Support Files/Pods-walkingApp/Pods-walkingApp.debug.xcconfig"; sourceTree = "<group>"; };
 		988A15EB3A4EC6F0C9428F0F /* Pods-walkingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-walkingApp.release.xcconfig"; path = "Target Support Files/Pods-walkingApp/Pods-walkingApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,14 +80,72 @@
 			children = (
 				4D13E422278C3E7600956BB2 /* AppDelegate.swift */,
 				4D13E426278C3E7600956BB2 /* ViewController.swift */,
+				569CE571279401BF00164226 /* Model */,
+				569CE56F279401B200164226 /* Controller */,
+				569CE56E279401A000164226 /* View */,
 				4D3B1A73279163BA004CEB48 /* myViewController.swift */,
-				4D13E428278C3E7600956BB2 /* Main.storyboard */,
 				4D13E42B278C3E7800956BB2 /* Assets.xcassets */,
 				4D13E42D278C3E7800956BB2 /* LaunchScreen.storyboard */,
 				4D3B1A7127915E39004CEB48 /* GoogleService-Info.plist */,
 				4D13E430278C3E7800956BB2 /* Info.plist */,
 			);
 			path = walkingApp;
+			sourceTree = "<group>";
+		};
+		569CE56E279401A000164226 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				569CE5742794023A00164226 /* Login */,
+				4D13E428278C3E7600956BB2 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		569CE56F279401B200164226 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				569CE5752794024000164226 /* Login */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		569CE571279401BF00164226 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				569CE573279401C700164226 /* Extension */,
+				569CE572279401C300164226 /* Network */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		569CE572279401C300164226 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		569CE573279401C700164226 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		569CE5742794023A00164226 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				569CE5762794026100164226 /* LoginVC.storyboard */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		569CE5752794024000164226 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				569CE5782794026E00164226 /* LoginVC.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		580818258E3CB4A79E7EF35C /* Frameworks */ = {
@@ -157,6 +219,7 @@
 				4D13E42F278C3E7800956BB2 /* LaunchScreen.storyboard in Resources */,
 				4D3B1A7227915E39004CEB48 /* GoogleService-Info.plist in Resources */,
 				4D13E42C278C3E7800956BB2 /* Assets.xcassets in Resources */,
+				569CE5772794026100164226 /* LoginVC.storyboard in Resources */,
 				4D13E42A278C3E7600956BB2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,6 +275,7 @@
 			files = (
 				4D13E427278C3E7600956BB2 /* ViewController.swift in Sources */,
 				4D3B1A74279163BA004CEB48 /* myViewController.swift in Sources */,
+				569CE5792794026E00164226 /* LoginVC.swift in Sources */,
 				4D13E423278C3E7600956BB2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
