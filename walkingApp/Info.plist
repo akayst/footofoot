@@ -2,8 +2,27 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>UIUserInterfaceStyle</key>
-	<string>Light</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.118853751681-9n6vnhuqkgur7jjsepa1bvq3hmrc30mp</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>Client</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.john.footofoot</string>
+			</array>
+		</dict>
+	</array>
 	<key>NMFClientId</key>
 	<string>tezb024dzx</string>
 	<key>UIAppFonts</key>

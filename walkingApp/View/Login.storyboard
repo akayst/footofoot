@@ -26,11 +26,11 @@
                                 <rect key="frame" x="0.0" y="88" width="428" height="838"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uVy-yW-KDE">
-                                        <rect key="frame" x="0.0" y="0.0" width="428" height="726.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="428" height="791.33333333333337"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lin-SJ-r20">
-                                        <rect key="frame" x="0.0" y="0.0" width="428" height="726.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="428" height="791.33333333333337"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gJo-ge-Fhq">
                                                 <rect key="frame" x="0.0" y="0.0" width="428" height="156.33333333333334"/>
@@ -146,6 +146,9 @@
                                                                 </fragment>
                                                             </attributedString>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="loginButton:" destination="nbD-aT-PLq" eventType="touchUpInside" id="fHq-Rr-BQp"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -178,6 +181,7 @@
                                                             </attributedString>
                                                         </buttonConfiguration>
                                                         <connections>
+                                                            <action selector="registerButton:" destination="nbD-aT-PLq" eventType="touchUpInside" id="coH-ZP-kWR"/>
                                                             <segue destination="Tgj-sI-GzE" kind="show" id="kxU-XW-mzh"/>
                                                         </connections>
                                                     </button>
@@ -188,6 +192,28 @@
                                                     <constraint firstItem="C9o-GR-GFA" firstAttribute="top" secondItem="Vl4-ge-miJ" secondAttribute="top" constant="15" id="8Vm-41-Bp2"/>
                                                     <constraint firstAttribute="trailing" secondItem="C9o-GR-GFA" secondAttribute="trailing" constant="20" id="EuI-aY-GJN"/>
                                                     <constraint firstItem="C9o-GR-GFA" firstAttribute="leading" secondItem="Vl4-ge-miJ" secondAttribute="leading" constant="20" id="lga-ch-w4n"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e3a-MU-Z9Y">
+                                                <rect key="frame" x="0.0" y="726.33333333333337" width="428" height="65"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YmL-mM-J7v" customClass="GIDSignInButton">
+                                                        <rect key="frame" x="20" y="15" width="388" height="50"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="Npd-eH-oiT"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="googleSignInButton:" destination="nbD-aT-PLq" eventType="valueChanged" id="Sob-Ad-06Y"/>
+                                                        </connections>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="YmL-mM-J7v" firstAttribute="top" secondItem="e3a-MU-Z9Y" secondAttribute="top" constant="15" id="ICT-PT-n3b"/>
+                                                    <constraint firstAttribute="trailing" secondItem="YmL-mM-J7v" secondAttribute="trailing" constant="20" id="Wcm-SX-ffC"/>
+                                                    <constraint firstAttribute="bottom" secondItem="YmL-mM-J7v" secondAttribute="bottom" id="d6P-1b-W7g"/>
+                                                    <constraint firstItem="YmL-mM-J7v" firstAttribute="leading" secondItem="e3a-MU-Z9Y" secondAttribute="leading" constant="20" id="yEg-ds-BOa"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -224,10 +250,19 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="xJB-aS-7T5"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="Wla-Yj-Iml" id="sLe-au-sDy"/>
+                        <outlet property="emailTextFieldView" destination="DzZ-M9-Mz5" id="bnj-Zu-KBw"/>
+                        <outlet property="googleSignInButton" destination="YmL-mM-J7v" id="pfr-u5-dO8"/>
+                        <outlet property="loginButton" destination="XAO-zX-5j3" id="8bt-Yz-e1h"/>
+                        <outlet property="passwordTextField" destination="OpH-4A-GLO" id="qdB-J3-KBo"/>
+                        <outlet property="passwordTextFieldView" destination="0pL-uT-AHU" id="kyq-qO-M3Q"/>
+                        <outlet property="registerButton" destination="C9o-GR-GFA" id="D1e-66-VTs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rh2-fO-o5L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1200" y="51.5625"/>
+            <point key="canvasLocation" x="1200" y="51.187904967602599"/>
         </scene>
         <!--회원가입-->
         <scene sceneID="wK7-p4-JDz">
