@@ -15,6 +15,7 @@
 		4D3B1A7227915E39004CEB48 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D3B1A7127915E39004CEB48 /* GoogleService-Info.plist */; };
 		4D3B1A74279163BA004CEB48 /* myViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3B1A73279163BA004CEB48 /* myViewController.swift */; };
 		4D894843278ED29E00677483 /* Pods_walkingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28CF3538A4D6C7E626F2B1C4 /* Pods_walkingApp.framework */; };
+		5625667527956C89009A63C7 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5625667427956C89009A63C7 /* RegisterVC.swift */; };
 		569CE5772794026100164226 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 569CE5762794026100164226 /* Login.storyboard */; };
 		569CE5792794026E00164226 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569CE5782794026E00164226 /* LoginVC.swift */; };
 		56CE5848279428E700584A4F /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CE5847279428E700584A4F /* HomeVC.swift */; };
@@ -40,6 +41,7 @@
 		4D13E430278C3E7800956BB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D3B1A7127915E39004CEB48 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4D3B1A73279163BA004CEB48 /* myViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myViewController.swift; sourceTree = "<group>"; };
+		5625667427956C89009A63C7 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		569CE5762794026100164226 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		569CE5782794026E00164226 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		56CE5847279428E700584A4F /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				569CE5782794026E00164226 /* LoginVC.swift */,
+				5625667427956C89009A63C7 /* RegisterVC.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -379,6 +382,7 @@
 				4D13E427278C3E7600956BB2 /* ViewController.swift in Sources */,
 				56CE5848279428E700584A4F /* HomeVC.swift in Sources */,
 				4D3B1A74279163BA004CEB48 /* myViewController.swift in Sources */,
+				5625667527956C89009A63C7 /* RegisterVC.swift in Sources */,
 				569CE5792794026E00164226 /* LoginVC.swift in Sources */,
 				4D13E423278C3E7600956BB2 /* AppDelegate.swift in Sources */,
 			);
@@ -537,7 +541,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = R5LLAHFBTA;
+				DEVELOPMENT_TEAM = WMN3W52C7Q;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = walkingApp/Info.plist;
@@ -557,7 +561,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = akay.walkingApp;
+				PRODUCT_BUNDLE_IDENTIFIER = john.walkingApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTS_MACCATALYST = NO;
@@ -578,7 +582,7 @@
 				CODE_SIGN_ENTITLEMENTS = walkingApp/walkingApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = R5LLAHFBTA;
+				DEVELOPMENT_TEAM = WMN3W52C7Q;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = walkingApp/Info.plist;
@@ -598,7 +602,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = akay.walkingApp;
+				PRODUCT_BUNDLE_IDENTIFIER = john.walkingApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
