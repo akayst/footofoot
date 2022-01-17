@@ -9,9 +9,13 @@ target 'walkingApp' do
   pod 'NMapsMap'
   pod 'Alamofire'
   pod 'SwiftyJSON'
-  pod 'Floaty', '~> 4.2.0'
+
+  pod 'GoogleSignIn', '~> 5.0.2'
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
+  pod 'Firebase/Core'
+
+  pod 'Floaty', '~> 4.2.0'
   pod 'FloatingPanel'
   post_install do |pi|
       pi.pods_project.targets.each do |t|
