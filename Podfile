@@ -14,6 +14,8 @@ target 'walkingApp' do
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
   pod 'Firebase/Core'
+  pod 'Firebase/Database'
+
 
   pod 'Floaty', '~> 4.2.0'
   pod 'FloatingPanel'
