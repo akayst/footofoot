@@ -21,6 +21,7 @@
 		563925C12795DA0A000E4C69 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563925C02795DA0A000E4C69 /* UserProfile.swift */; };
 		569CE5772794026100164226 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 569CE5762794026100164226 /* Login.storyboard */; };
 		569CE5792794026E00164226 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569CE5782794026E00164226 /* LoginVC.swift */; };
+		56B34A2427972E8A001D9EE3 /* UILabelDeviceClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B34A2327972E89001D9EE3 /* UILabelDeviceClass.swift */; };
 		56CE5848279428E700584A4F /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CE5847279428E700584A4F /* HomeVC.swift */; };
 		56CE584A2794291A00584A4F /* MyInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CE58492794291A00584A4F /* MyInfoVC.swift */; };
 		56CE584C27942A9800584A4F /* BottomTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56CE584B27942A9800584A4F /* BottomTabBar.storyboard */; };
@@ -50,6 +51,7 @@
 		563925C02795DA0A000E4C69 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		569CE5762794026100164226 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		569CE5782794026E00164226 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		56B34A2327972E89001D9EE3 /* UILabelDeviceClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelDeviceClass.swift; sourceTree = "<group>"; };
 		56CE5847279428E700584A4F /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		56CE58492794291A00584A4F /* MyInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInfoVC.swift; sourceTree = "<group>"; };
 		56CE584B27942A9800584A4F /* BottomTabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BottomTabBar.storyboard; sourceTree = "<group>"; };
@@ -156,7 +158,6 @@
 			isa = PBXGroup;
 			children = (
 				569CE572279401C300164226 /* Network */,
-				569CE573279401C700164226 /* Extension */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -164,16 +165,10 @@
 		569CE572279401C300164226 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				56B34A2027970284001D9EE3 /* Extension */,
 				563925BB2795D96D000E4C69 /* Manager */,
 			);
 			path = Network;
-			sourceTree = "<group>";
-		};
-		569CE573279401C700164226 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extension;
 			sourceTree = "<group>";
 		};
 		569CE5752794024000164226 /* Login */ = {
@@ -183,6 +178,14 @@
 				5625667427956C89009A63C7 /* RegisterVC.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		56B34A2027970284001D9EE3 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				56B34A2327972E89001D9EE3 /* UILabelDeviceClass.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		56CE58442794278300584A4F /* Home */ = {
@@ -386,6 +389,7 @@
 				563925C12795DA0A000E4C69 /* UserProfile.swift in Sources */,
 				563925BF2795D9DA000E4C69 /* UserService.swift in Sources */,
 				56CE5848279428E700584A4F /* HomeVC.swift in Sources */,
+				56B34A2427972E8A001D9EE3 /* UILabelDeviceClass.swift in Sources */,
 				563925BD2795D989000E4C69 /* ClientApi.swift in Sources */,
 				4D3B1A74279163BA004CEB48 /* myViewController.swift in Sources */,
 				5625667527956C89009A63C7 /* RegisterVC.swift in Sources */,
@@ -557,7 +561,7 @@
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "ㅎㅎ";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Login;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
@@ -599,7 +603,7 @@
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "ㅎㅎ";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Login;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
