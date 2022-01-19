@@ -20,10 +20,13 @@
 		563925BF2795D9DA000E4C69 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563925BE2795D9DA000E4C69 /* UserService.swift */; };
 		563925C12795DA0A000E4C69 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563925C02795DA0A000E4C69 /* UserProfile.swift */; };
 		569CE5772794026100164226 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 569CE5762794026100164226 /* Login.storyboard */; };
-		569CE5792794026E00164226 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569CE5782794026E00164226 /* LoginVC.swift */; };
+		569DC55627980A1B0003B4BF /* UserInfoSettings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 569DC55527980A1B0003B4BF /* UserInfoSettings.storyboard */; };
+		569DC55827980F900003B4BF /* FirebaseAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569DC55727980F900003B4BF /* FirebaseAuthManager.swift */; };
 		56B34A2427972E8A001D9EE3 /* UILabelDeviceClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B34A2327972E89001D9EE3 /* UILabelDeviceClass.swift */; };
+		56B58B6D27981BB100E40026 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569DC559279810B20003B4BF /* LoginVC.swift */; };
+		56B58B6F27982E8200E40026 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B58B6E27982E8200E40026 /* SettingsVC.swift */; };
 		56CE5848279428E700584A4F /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CE5847279428E700584A4F /* HomeVC.swift */; };
-		56CE584A2794291A00584A4F /* MyInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CE58492794291A00584A4F /* MyInfoVC.swift */; };
+		56CE584A2794291A00584A4F /* UserInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CE58492794291A00584A4F /* UserInfoVC.swift */; };
 		56CE584C27942A9800584A4F /* BottomTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56CE584B27942A9800584A4F /* BottomTabBar.storyboard */; };
 		56CE584E27942AB400584A4F /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56CE584D27942AB400584A4F /* Home.storyboard */; };
 		56CE58572794305C00584A4F /* NotoSansKR-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 56CE58512794305500584A4F /* NotoSansKR-Bold.otf */; };
@@ -50,10 +53,13 @@
 		563925BE2795D9DA000E4C69 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		563925C02795DA0A000E4C69 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		569CE5762794026100164226 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
-		569CE5782794026E00164226 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		569DC55527980A1B0003B4BF /* UserInfoSettings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserInfoSettings.storyboard; sourceTree = "<group>"; };
+		569DC55727980F900003B4BF /* FirebaseAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthManager.swift; sourceTree = "<group>"; };
+		569DC559279810B20003B4BF /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		56B34A2327972E89001D9EE3 /* UILabelDeviceClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelDeviceClass.swift; sourceTree = "<group>"; };
+		56B58B6E27982E8200E40026 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		56CE5847279428E700584A4F /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
-		56CE58492794291A00584A4F /* MyInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInfoVC.swift; sourceTree = "<group>"; };
+		56CE58492794291A00584A4F /* UserInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoVC.swift; sourceTree = "<group>"; };
 		56CE584B27942A9800584A4F /* BottomTabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BottomTabBar.storyboard; sourceTree = "<group>"; };
 		56CE584D27942AB400584A4F /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		56CE58512794305500584A4F /* NotoSansKR-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Bold.otf"; sourceTree = "<group>"; };
@@ -128,6 +134,7 @@
 				563925BC2795D989000E4C69 /* ClientApi.swift */,
 				563925BE2795D9DA000E4C69 /* UserService.swift */,
 				563925C02795DA0A000E4C69 /* UserProfile.swift */,
+				569DC55727980F900003B4BF /* FirebaseAuthManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -139,6 +146,7 @@
 				569CE5762794026100164226 /* Login.storyboard */,
 				56CE584D27942AB400584A4F /* Home.storyboard */,
 				4D13E428278C3E7600956BB2 /* Main.storyboard */,
+				569DC55527980A1B0003B4BF /* UserInfoSettings.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -174,7 +182,7 @@
 		569CE5752794024000164226 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				569CE5782794026E00164226 /* LoginVC.swift */,
+				569DC559279810B20003B4BF /* LoginVC.swift */,
 				5625667427956C89009A63C7 /* RegisterVC.swift */,
 			);
 			path = Login;
@@ -207,7 +215,8 @@
 		56CE58462794279C00584A4F /* MyInfo */ = {
 			isa = PBXGroup;
 			children = (
-				56CE58492794291A00584A4F /* MyInfoVC.swift */,
+				56CE58492794291A00584A4F /* UserInfoVC.swift */,
+				56B58B6E27982E8200E40026 /* SettingsVC.swift */,
 			);
 			path = MyInfo;
 			sourceTree = "<group>";
@@ -304,6 +313,7 @@
 			files = (
 				56CE584E27942AB400584A4F /* Home.storyboard in Resources */,
 				56CE585A2794305C00584A4F /* NotoSansKR-Black.otf in Resources */,
+				569DC55627980A1B0003B4BF /* UserInfoSettings.storyboard in Resources */,
 				56CE585C2794305C00584A4F /* NotoSansKR-Medium.otf in Resources */,
 				56CE58582794305C00584A4F /* NotoSansKR-Regular.otf in Resources */,
 				4D13E42F278C3E7800956BB2 /* LaunchScreen.storyboard in Resources */,
@@ -384,16 +394,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56CE584A2794291A00584A4F /* MyInfoVC.swift in Sources */,
+				56B58B6F27982E8200E40026 /* SettingsVC.swift in Sources */,
+				56CE584A2794291A00584A4F /* UserInfoVC.swift in Sources */,
 				4D13E427278C3E7600956BB2 /* ViewController.swift in Sources */,
+				56B58B6D27981BB100E40026 /* LoginVC.swift in Sources */,
 				563925C12795DA0A000E4C69 /* UserProfile.swift in Sources */,
 				563925BF2795D9DA000E4C69 /* UserService.swift in Sources */,
 				56CE5848279428E700584A4F /* HomeVC.swift in Sources */,
 				56B34A2427972E8A001D9EE3 /* UILabelDeviceClass.swift in Sources */,
+				569DC55827980F900003B4BF /* FirebaseAuthManager.swift in Sources */,
 				563925BD2795D989000E4C69 /* ClientApi.swift in Sources */,
 				4D3B1A74279163BA004CEB48 /* myViewController.swift in Sources */,
 				5625667527956C89009A63C7 /* RegisterVC.swift in Sources */,
-				569CE5792794026E00164226 /* LoginVC.swift in Sources */,
 				4D13E423278C3E7600956BB2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

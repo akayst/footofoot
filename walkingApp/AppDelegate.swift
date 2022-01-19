@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         
         let authListener = Auth.auth().addStateDidChangeListener { auth, user in
             
-            let mainstoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let mainstoryboard = UIStoryboard(name: "BottomTabBar", bundle: nil)
             let loginStoryboard = UIStoryboard(name: "Login", bundle: nil)
             
             if user != nil {
@@ -33,7 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
                     UserService.currentUserProfile = userProfile
                 }
                 
-                let controller = mainstoryboard.instantiateViewController(withIdentifier: "MainTapBarController") as! UITabBarController
+                let controller = mainstoryboard.instantiateViewController(withIdentifier: "MainTabBarController") as! UITabBarController
                 self.window?.rootViewController = controller
                 self.window?.makeKeyAndVisible()
                 print("logged in")
