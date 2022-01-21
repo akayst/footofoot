@@ -115,6 +115,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate, NMFMapViewTou
                  self.api.walkingPoint = self.distance1 * 1.25
                  self.api.distance = self.distance1
                  self.api.pathModel = self.pathArr
+                 postData(api: self.api)
+                 getData()
                  self.mapView.touchDelegate = nil
                  self.pathArr = []
                  self.pathOverlay.mapView = nil
