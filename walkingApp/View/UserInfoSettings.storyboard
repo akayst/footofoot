@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1TL-yW-9GN">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--내 정보-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="UserInfoVC" id="Y6W-OH-hqX" customClass="UserInfoVC" customModule="walkingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mGo-ED-ebb">
+                                <rect key="frame" x="95" y="192" width="73" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="로그아웃"/>
+                                <connections>
+                                    <action selector="logoutButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ycw-SD-ebu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mGo-ED-ebb" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="Rsr-Y2-8hR"/>
+                            <constraint firstItem="mGo-ED-ebb" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="hIg-MB-zyv"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="내 정보" image="offBottomUserInfo" selectedImage="onBottomUserInfo" id="K7g-pV-JLP"/>
+                    <navigationItem key="navigationItem" id="XD8-WV-QgN">
+                        <barButtonItem key="rightBarButtonItem" image="settings" style="plain" id="78u-ja-xaQ">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="APd-ml-hoZ">
+                                <rect key="frame" x="229" y="5" width="75" height="34.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="settings"/>
+                            </button>
+                            <connections>
+                                <segue destination="OdG-m4-gsR" kind="push" id="V88-yt-dDC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1031.25" y="67.605633802816897"/>
+        </scene>
+        <!--환경설정-->
+        <scene sceneID="PUS-bV-OMU">
+            <objects>
+                <viewController id="OdG-m4-gsR" customClass="SettingsVC" customModule="walkingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E31-rP-xTX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Y74-zu-oRs">
+                                <rect key="frame" x="20" y="64" width="280" height="40"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mSN-7y-rFs">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wDk-Tg-rMf">
+                                                <rect key="frame" x="0.0" y="0.0" width="280" height="40"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain"/>
+                                                <connections>
+                                                    <action selector="logoutButton:" destination="OdG-m4-gsR" eventType="touchUpInside" id="zEQ-sM-CnA"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="로그아웃" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4cl-TD-Iq4" customClass="UILabelDeviceClass" customModule="walkingApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="11" width="52" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                                        <real key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="wDk-Tg-rMf" firstAttribute="leading" secondItem="mSN-7y-rFs" secondAttribute="leading" id="FVE-U7-ZIg"/>
+                                            <constraint firstItem="wDk-Tg-rMf" firstAttribute="top" secondItem="mSN-7y-rFs" secondAttribute="top" id="Rcn-JN-z1L"/>
+                                            <constraint firstAttribute="trailing" secondItem="wDk-Tg-rMf" secondAttribute="trailing" id="amp-YL-U9V"/>
+                                            <constraint firstAttribute="bottom" secondItem="wDk-Tg-rMf" secondAttribute="bottom" id="ieh-8J-00W"/>
+                                            <constraint firstAttribute="width" secondItem="mSN-7y-rFs" secondAttribute="height" multiplier="280:40" id="mce-Ji-laj"/>
+                                            <constraint firstItem="4cl-TD-Iq4" firstAttribute="centerY" secondItem="wDk-Tg-rMf" secondAttribute="centerY" id="np3-bn-Gwj"/>
+                                            <constraint firstItem="4cl-TD-Iq4" firstAttribute="leading" secondItem="mSN-7y-rFs" secondAttribute="leading" id="sGi-m9-dNe"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3lY-pp-yoB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3lY-pp-yoB" firstAttribute="trailing" secondItem="Y74-zu-oRs" secondAttribute="trailing" constant="20" id="fQh-FB-t8T"/>
+                            <constraint firstItem="Y74-zu-oRs" firstAttribute="leading" secondItem="3lY-pp-yoB" secondAttribute="leading" constant="20" id="jxL-fR-Kwz"/>
+                            <constraint firstItem="Y74-zu-oRs" firstAttribute="top" secondItem="3lY-pp-yoB" secondAttribute="top" constant="20" id="wl2-Mr-ix4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="환경설정" id="pRT-Vn-7a1">
+                        <barButtonItem key="leftBarButtonItem" image="BackArrow" id="Bhw-yK-82t"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FmI-0r-3l5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1741.875" y="67.605633802816897"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7zs-7q-GzQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1TL-yW-9GN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UPw-xg-Hmj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="wN1-J9-OqS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5cb-VV-OPG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="33.75" y="67.605633802816897"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BackArrow" width="7.5" height="12"/>
+        <image name="offBottomUserInfo" width="15" height="15"/>
+        <image name="onBottomUserInfo" width="15" height="15"/>
+        <image name="settings" width="13" height="13"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
