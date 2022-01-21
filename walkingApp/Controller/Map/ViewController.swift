@@ -18,6 +18,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate, NMFMapViewTou
   
     @IBOutlet var mapView: NMFMapView!
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+
+    
      var locationManager = CLLocationManager()
      func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
          let lastLoc = locations.last?.coordinate
@@ -158,7 +163,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, NMFMapViewTou
          shadow.radius = 10.0
          appearance.shadows = [shadow]
          appearance.cornerRadius = 30
-         surfaceView.containerMargins = .init(top: 100.0, left: 100.0, bottom: 300.0, right: 100.0)
+         surfaceView.containerMargins = .init(top: 100.0, left: 10.0, bottom: 300.0, right: 10.0)
          appearance.backgroundColor = .clear
          appearance.borderColor = .clear
          appearance.borderWidth = 0
