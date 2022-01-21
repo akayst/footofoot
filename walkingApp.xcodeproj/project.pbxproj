@@ -173,7 +173,6 @@
 		569CE572279401C300164226 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				56B34A2027970284001D9EE3 /* Extension */,
 				563925BB2795D96D000E4C69 /* Manager */,
 			);
 			path = Network;
@@ -224,6 +223,7 @@
 		56CE584F2794301200584A4F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				56B34A2027970284001D9EE3 /* Extension */,
 				56CE58502794302C00584A4F /* Fonts */,
 			);
 			path = Resources;
