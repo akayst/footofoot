@@ -29,6 +29,7 @@ class RegisterVC: UIViewController {
                 var message: String = ""
                 if (success) {
                     message = "사용자의 아이디가 성공적으로 생성되었습니다."
+                    UserDefaults.standard.set(email, forKey: "userId")
                     self.performSegue(withIdentifier: "signUpSuccessSegue", sender: self)
                     // 다음 화면으로 이동
                 } else {

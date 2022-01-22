@@ -115,6 +115,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, NMFMapViewTou
                  self.api.walkingPoint = self.distance1 * 1.25
                  self.api.distance = self.distance1
                  self.api.pathModel = self.pathArr
+                 self.api.userId = UserDefaults.standard.string(forKey: "userId")
                  postData(api: self.api)
                  getData()
                  self.mapView.touchDelegate = nil
@@ -158,7 +159,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, NMFMapViewTou
      func changePanelStyle(){
          let appearance = SurfaceAppearance()
          let shadow = SurfaceAppearance.Shadow()
-         let test =
          shadow.color = UIColor.black
          shadow.offset = CGSize(width: 0, height: -4.0)
          shadow.opacity = 0.3

@@ -46,6 +46,7 @@ class LoginVC: UIViewController {
         
         Auth.auth().signIn(withEmail: email, password: password) { user, error in
             if error == nil && user != nil {
+                UserDefaults.standard.set(email, forKey: "userId")
                 self.dismiss(animated: false, completion: nil)
             } else {
                 print("Error logging in: \(error!.localizedDescription)")

@@ -13,17 +13,17 @@ import Firebase
 
 let db = Firestore.firestore()
 
-let docRef = Firestore.firestore().collection("test").document()
-let docId = docRef.documentID
+let docRef = Firestore.firestore().collection("footofoot")
 
 func postData(api:walkmodel){
-    let data: [String:Any] = [
-        
-        "walkingPoint": api.walkingPoint,
-        "distance": api.distance
-        
+    var url = "https://firestore.googleapis.com/v1/projects/akayst-3d156/databases/(default)/documents/footofoot"
+    let data: Parameters = [
+        "userId" : api.userId,
+        "walkingPoint" : api.walkingPoint,
+        "distance" : api.distance
     ]
-    docRef.setData(data){ (error) in
+    
+    docRef.addDocument(data: data){ (error) in
         
         if let error = error{
             print("통신에러 ㅆㅆㅆ")
@@ -34,7 +34,7 @@ func postData(api:walkmodel){
     }
 }
 func getData(){
-    var url = "https://firestore.googleapis.com/v1/projects/akayst-3d156/databases/(default)/documents/test"
+    var url = "https://firestore.googleapis.com/v1/projects/akayst-3d156/databases/(default)/documents/footofoot"
     
     AF.request(url, method: .get)
         .responseJSON { response in
@@ -49,7 +49,7 @@ func getData(){
                     print("ㅁㅁ")
                     
                     
-                    print("walkingPoint? -> \(subJson["fields"]["walkingPoint"]["doubleValue"].doubleValue)")
+                    print("walkingPoint? -> \(subJson["fields"]["userId"]["stringValue"].stringValue)")
                     
                 }
                 
@@ -57,5 +57,4 @@ func getData(){
                 print("err")
             }
         }
-    
-    }
+}

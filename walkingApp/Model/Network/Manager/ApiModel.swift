@@ -13,13 +13,15 @@ protocol DocumentSerializable{
 }
 struct walkmodel{
     
-    //let userId:String?
+    var userId : String?
     var walkingPoint:Double?
     var distance:Double?
     var pathModel:Array<NMGLatLng> = []
     
+    
     var dictionary: [String:Any]{
         return [
+            "userId" : userId,
             "walkingPoint": walkingPoint,
             "distance": distance,
             "pathModel": pathModel
