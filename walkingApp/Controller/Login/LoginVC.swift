@@ -11,6 +11,8 @@ import FirebaseAuth
 import Firebase
 import GoogleSignIn
 
+
+/// 로그인 뷰컨
 class LoginVC: UIViewController {
     
     
@@ -65,3 +67,4 @@ class LoginVC: UIViewController {
     
     
 }
+
