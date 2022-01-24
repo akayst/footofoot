@@ -16,6 +16,8 @@ target 'walkingApp' do
   pod 'Firebase/Core'
   pod 'Firebase/Database'
 
+
+  pod 'BubbleTabBar'
   pod 'Floaty', '~> 4.2.0'
   pod 'FloatingPanel'
   post_install do |pi|

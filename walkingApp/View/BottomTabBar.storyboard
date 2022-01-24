@@ -37,18 +37,10 @@
             </objects>
             <point key="canvasLocation" x="830" y="152"/>
         </scene>
-        <!--Storyboard Reference-->
-        <scene sceneID="vQS-Yx-Fc7">
-            <objects>
-                <viewControllerPlaceholder id="0cd-98-ARn" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ChG-ga-0Fs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="890" y="240"/>
-        </scene>
-        <!--Tab Bar Controller-->
+        <!--Bubble Tab Bar Controller-->
         <scene sceneID="Kbx-Fm-qbc">
             <objects>
-                <tabBarController storyboardIdentifier="MainTabBarController" automaticallyAdjustsScrollViewInsets="NO" id="Rkp-Lj-oKn" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MainTabBarController" automaticallyAdjustsScrollViewInsets="NO" id="Rkp-Lj-oKn" customClass="BubbleTabBarController" customModule="BubbleTabBar" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jVD-aI-qUL">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
