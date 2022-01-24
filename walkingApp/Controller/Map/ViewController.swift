@@ -14,7 +14,8 @@ import Floaty
 import FloatingPanel
 
 
-class ViewController: UIViewController, CLLocationManagerDelegate, NMFMapViewTouchDelegate, FloatingPanelControllerDelegate{
+
+class ViewController: UIViewController, CLLocationManagerDelegate, NMFMapViewTouchDelegate,NMFMapViewDelegate, FloatingPanelControllerDelegate{
   
     @IBOutlet var mapView: NMFMapView!
     
@@ -38,7 +39,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, NMFMapViewTou
      var distance1 = 0.0
      var walkingpoint1 = 0.0
      var api = walkmodel()
-     
      func mapView(_ mapView: NMFMapView, didTapMap latlng: NMGLatLng, point: CGPoint) {
          print("해당위치의 위도는 \(latlng.lat),\(latlng.lng)")
          self.pathArr.append(latlng)
@@ -95,6 +95,26 @@ class ViewController: UIViewController, CLLocationManagerDelegate, NMFMapViewTou
              let test = Floaty()
              test.addItem(title: "업로드하기") { FloatyItem
                  in
+                 self.api.walkingPoint = self.distance1 * 1.25
+                 self.api.distance = self.distance1
+                 self.api.pathModel = self.pathArr
+                 self.api.cameraPositionLat = Double(self.pathArr.first?.lat ?? 0.0)
+                 self.api.cameraPositionLng = Double(self.pathArr.first?.lng ?? 0.0)
+                 self.api.userId = UserDefaults.standard.string(forKey: "userId")
+                 postData(api: self.api)
+                 getData()
+                 
+                 self.pathArr = []
+                 self.pathOverlay.mapView = nil
+                 self.count = 0
+                
+                 
+                 
+                 print("통신--")
+                 print(self.api.pathModel)
+                 print(self.api.distance)
+                 print(self.api.walkingPoint)
+                 print("---")
                  print("업로드성공")
              }
              test.addItem(title: "스케치 지우기") { FloatyItem in
@@ -112,22 +132,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate, NMFMapViewTou
                  }
              }
              test.addItem(title: "스케치 그만하기") { FloatyItem in
-                 self.api.walkingPoint = self.distance1 * 1.25
-                 self.api.distance = self.distance1
-                 self.api.pathModel = self.pathArr
-                 self.api.userId = UserDefaults.standard.string(forKey: "userId")
-                 postData(api: self.api)
-                 getData()
                  self.mapView.touchDelegate = nil
                  self.pathArr = []
                  self.pathOverlay.mapView = nil
                  self.count = 0
-
-                 print("통신--")
-                 print(self.api.pathModel)
-                 print(self.api.distance)
-                 print(self.api.walkingPoint)
-                 print("---")
                  self.view.addSubview(floaty)
                  
              }
