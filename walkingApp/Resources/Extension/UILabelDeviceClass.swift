@@ -36,24 +36,34 @@ func overrideFontSize(fontSize:CGFloat){
         self.font = calculatedFont
         break
     case 736.0: //iphone 6s+ 6+ 7 => 5.5 inch
-        calculatedFont = UIFont(name: currentFontName, size: fontSize)
+        calculatedFont = UIFont(name: currentFontName, size: fontSize * 1.0)
         self.font = calculatedFont
         break
     case 812.0: //iphone X, XS, 11 Pro, 12 mini, 13 mini => 5.8 inch
-        calculatedFont = UIFont(name: currentFontName, size: fontSize)
+        calculatedFont = UIFont(name: currentFontName, size: fontSize * 1.1)
         self.font = calculatedFont
         break
     case 844.0: // iphone 12 Pro, 12, 13 Pro, 13
-        calculatedFont = UIFont(name: currentFontName, size: fontSize)
+        calculatedFont = UIFont(name: currentFontName, size: fontSize * 1.2)
         self.font = calculatedFont
     case 896.0: //iphone XR => 6.1 inch, 11, 11 Pro Max  // iphone XS MAX => 6.5 inch
-        calculatedFont = UIFont(name: currentFontName, size: fontSize)
+        calculatedFont = UIFont(name: currentFontName, size: fontSize * 1.3)
         self.font = calculatedFont
         break
     case 926.0: //iphone 13 pro max, 12 Pro Max
-        calculatedFont = UIFont(name: currentFontName, size: fontSize)
+        calculatedFont = UIFont(name: currentFontName, size: fontSize * 1.4)
         self.font = calculatedFont
         break
+    case 1640.0: //iphone 13 pro max, 12 Pro Max
+        calculatedFont = UIFont(name: currentFontName, size: fontSize * 100.0)
+        self.font = calculatedFont
+        break
+    case 2360.0: //iphone 13 pro max, 12 Pro Max
+        calculatedFont = UIFont(name: currentFontName, size: fontSize * 100.0)
+        self.font = calculatedFont
+        break
+
+
     default:
         print("not an iPhone")
         break

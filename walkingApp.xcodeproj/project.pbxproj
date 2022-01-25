@@ -27,6 +27,7 @@
 		56B34A2427972E8A001D9EE3 /* UILabelDeviceClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B34A2327972E89001D9EE3 /* UILabelDeviceClass.swift */; };
 		56B58B6D27981BB100E40026 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569DC559279810B20003B4BF /* LoginVC.swift */; };
 		56B58B6F27982E8200E40026 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B58B6E27982E8200E40026 /* SettingsVC.swift */; };
+		56C851AC279AAE3A0007F40A /* ContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C851AB279AAE3A0007F40A /* ContentCell.swift */; };
 		56CE5848279428E700584A4F /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CE5847279428E700584A4F /* HomeVC.swift */; };
 		56CE584A2794291A00584A4F /* UserInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CE58492794291A00584A4F /* UserInfoVC.swift */; };
 		56CE584C27942A9800584A4F /* BottomTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56CE584B27942A9800584A4F /* BottomTabBar.storyboard */; };
@@ -62,6 +63,7 @@
 		569DC559279810B20003B4BF /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		56B34A2327972E89001D9EE3 /* UILabelDeviceClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelDeviceClass.swift; sourceTree = "<group>"; };
 		56B58B6E27982E8200E40026 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		56C851AB279AAE3A0007F40A /* ContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCell.swift; sourceTree = "<group>"; };
 		56CE5847279428E700584A4F /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		56CE58492794291A00584A4F /* UserInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoVC.swift; sourceTree = "<group>"; };
 		56CE584B27942A9800584A4F /* BottomTabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BottomTabBar.storyboard; sourceTree = "<group>"; };
@@ -148,8 +150,8 @@
 		569CE56E279401A000164226 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				56CE584B27942A9800584A4F /* BottomTabBar.storyboard */,
 				569CE5762794026100164226 /* Login.storyboard */,
+				56CE584B27942A9800584A4F /* BottomTabBar.storyboard */,
 				56CE584D27942AB400584A4F /* Home.storyboard */,
 				4D13E428278C3E7600956BB2 /* Main.storyboard */,
 				569DC55527980A1B0003B4BF /* UserInfoSettings.storyboard */,
@@ -205,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				56CE5847279428E700584A4F /* HomeVC.swift */,
+				56C851AB279AAE3A0007F40A /* ContentCell.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -407,6 +410,7 @@
 				4D3B1A82279A90E9004CEB48 /* ApiModel.swift in Sources */,
 				563925C12795DA0A000E4C69 /* UserProfile.swift in Sources */,
 				563925BF2795D9DA000E4C69 /* UserService.swift in Sources */,
+				56C851AC279AAE3A0007F40A /* ContentCell.swift in Sources */,
 				4D3B1A80279A90DD004CEB48 /* API.swift in Sources */,
 				56CE5848279428E700584A4F /* HomeVC.swift in Sources */,
 				56B34A2427972E8A001D9EE3 /* UILabelDeviceClass.swift in Sources */,
