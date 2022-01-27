@@ -29,7 +29,6 @@
 		56B58B6F27982E8200E40026 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B58B6E27982E8200E40026 /* SettingsVC.swift */; };
 		56C851AC279AAE3A0007F40A /* ContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C851AB279AAE3A0007F40A /* ContentCell.swift */; };
 		56CE5848279428E700584A4F /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CE5847279428E700584A4F /* HomeVC.swift */; };
-		56CE584A2794291A00584A4F /* UserInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CE58492794291A00584A4F /* UserInfoVC.swift */; };
 		56CE584C27942A9800584A4F /* BottomTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56CE584B27942A9800584A4F /* BottomTabBar.storyboard */; };
 		56CE584E27942AB400584A4F /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56CE584D27942AB400584A4F /* Home.storyboard */; };
 		56CE58572794305C00584A4F /* NotoSansKR-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 56CE58512794305500584A4F /* NotoSansKR-Bold.otf */; };
@@ -404,7 +403,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				56B58B6F27982E8200E40026 /* SettingsVC.swift in Sources */,
-				56CE584A2794291A00584A4F /* UserInfoVC.swift in Sources */,
 				4D13E427278C3E7600956BB2 /* ViewController.swift in Sources */,
 				56B58B6D27981BB100E40026 /* LoginVC.swift in Sources */,
 				4D3B1A82279A90E9004CEB48 /* ApiModel.swift in Sources */,
